@@ -180,7 +180,7 @@ The results show Princess Celestia and Princess Luna are both Ancient and Magica
 
 **Question: How do ponies rank based on their adventure performance?**
 
-Windoes functions were a little conufsing. This query uses ROW_NUMBER and RANK to assign rankings to ponies based on their average contribution scores. The difference is that ROW_NUMBER gives each row a unique number even if there are ties, while RANK gives the same rank to tied values and then skips numbers. The OVER clause specifies how to calculate the window function. In this case it is ordering by average contribution score descending. 
+Windows functions were a little confusing. This query uses ROW_NUMBER and RANK to assign rankings to ponies based on their average contribution scores. The difference is that ROW_NUMBER gives each row a unique number even if there are ties, while RANK gives the same rank to tied values and then skips numbers. The OVER clause specifies how to calculate the window function. In this case it is ordering by average contribution score descending. 
 
 ```sql
 SELECT
